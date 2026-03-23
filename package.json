@@ -2,6 +2,10 @@
   "name": "mukesh-kotlin-formatter",
   "displayName": "Mukesh Kotlin Formatter",
   "publisher": "Mukesh Murugaiyan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rtrmukesh/mukesh-kotlin-formatter"
+  },
   "keywords": [
     "kotlin",
     "formatter",
