@@ -1,0 +1,76 @@
+{
+  "name": "mukesh-kotlin-formatter",
+  "displayName": "Mukesh Kotlin Formatter",
+  "publisher": "Mukesh Murugaiyan",
+  "keywords": [
+    "kotlin",
+    "formatter",
+    "ktlint",
+    "code formatter",
+    "Mukesh Murugaiyan",
+    "Mukesh",
+    "Kotlin Formatter",
+    "Mukesh Murugaiyan Extension",
+    "Mukesh Murugaiyan Extensions",
+    "Mukesh Murugaiyan formatter",
+    "Mukesh Murugaiyan ktlint",
+    "Mukesh Murugaiyan code formatter"
+  ],
+  "description": "Fast and lightweight Kotlin formatter for VS Code powered by ktlint. Format, clean, and improve your Kotlin code instantly.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "kotlinFormatter.format",
+        "title": "Mukesh: Format Kotlin File 🚀"
+      },
+      {
+        "command": "kotlinFormatter.formatSelection",
+        "title": "Mukesh: Format Selected Kotlin Code ✂️"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "resourceExtname == .kt || resourceExtname == .kts",
+          "command": "kotlinFormatter.format",
+          "group": "1_modification"
+        },
+        {
+          "when": "(resourceExtname == .kt || resourceExtname == .kts) && editorHasSelection",
+          "command": "kotlinFormatter.formatSelection",
+          "group": "1_modification"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "kotlinFormatter.format",
+        "key": "ctrl+shift+i",
+        "mac": "cmd+shift+i",
+        "when": "editorTextFocus && (resourceExtname == .kt || resourceExtname == .kts)"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "1.70.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.39.3"
+  }
+}
