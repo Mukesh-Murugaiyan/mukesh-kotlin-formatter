@@ -39,8 +39,7 @@ A fast and lightweight Kotlin formatter for Visual Studio Code powered by ktlint
 
 ## 🌐 Website
 
-Visit: **https://yourwebsite.com**  
-(Replace with your real site link)
+Visit: **https://themukesh.com**  
 
 ---
 
@@ -52,7 +51,7 @@ Install the extension via VSIX or VS Code Marketplace.
 
 ## 👨‍💻 Author
 
-**Mukesh M**  
+**Mukesh Murugaiyan**  
 Full Stack Developer (Web, Android, iOS, Desktop)
 
 ---
