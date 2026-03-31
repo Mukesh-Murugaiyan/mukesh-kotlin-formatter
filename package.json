@@ -1,11 +1,13 @@
 {
   "name": "mukesh-kotlin-formatter",
   "displayName": "Mukesh Kotlin Formatter",
-  "publisher": "Mukesh Murugaiyan",
+  "publisher": "Mukeshm",
+  "icon": "images/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/rtrmukesh/mukesh-kotlin-formatter"
   },
+  "homepage": "https://themukesh.com", 
   "keywords": [
     "kotlin",
     "formatter",
@@ -18,15 +20,17 @@
     "Mukesh Murugaiyan Extensions",
     "Mukesh Murugaiyan formatter",
     "Mukesh Murugaiyan ktlint",
-    "Mukesh Murugaiyan code formatter"
+    "Mukesh Murugaiyan code formatter",
+    "vscode kotlin"
   ],
   "description": "Fast and lightweight Kotlin formatter for VS Code powered by ktlint. Format, clean, and improve your Kotlin code instantly.",
-  "version": "0.0.1",
+  "version": "0.0.6",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.70.0"
   },
   "categories": [
-    "Other"
+    "Formatters"
   ],
   "activationEvents": [],
   "main": "./extension.js",
