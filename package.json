@@ -24,7 +24,7 @@
     "vscode kotlin"
   ],
   "description": "Fast and lightweight Kotlin formatter for VS Code powered by ktlint. Format, clean, and improve your Kotlin code instantly.",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "MIT",
   "engines": {
     "vscode": "^1.70.0"
@@ -71,7 +71,9 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "build": "vsce package",
+    "publish": "ovsx publish mukesh-kotlin-formatter-$npm_package_version.vsix"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
